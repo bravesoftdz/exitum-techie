@@ -1,0 +1,260 @@
+.logo-exitum {
+    width: 120px;
+}
+
+.container-exlg {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.container-ex {
+    width: 100%;
+    max-width: 1400px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    box-shadow: none !important;
+}
+
+.login-session {
+    color: #352ECD !important;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.navbar.navbar-dark .navbar-toggler-icon {
+    background-image: url(../img/menu.svg) !important; 
+}
+
+/* banner styles */ 
+.banner {
+    background: #FFF;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .container-banner {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .info-banner {
+            margin-top: 100px;
+            h2 {
+                font-family: 'Montserrat';
+                color: #222222;
+                font-size: 48px;
+                font-weight: 600;
+            }
+            .register {
+                margin-top: 100px;
+                .btn {
+                    margin-left: 60px;
+                    background: #352ECD !important;
+                    padding: 20px 40px;
+                    margin-top: 20px;
+                    font-family: 'Montserrat';
+                    border-radius: 40px;
+                    text-align: center;
+                    cursor: pointer;
+                    color: #FFF;
+                    font-size: 21px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    box-shadow: none;
+                    transition: 0.6s;
+                    box-shadow: 0 4px 20px 0 rgba(37, 16, 228, 0.14), 0 7px 10px -5px rgba(72, 72, 80, 0.851);
+                    transition: 0.6s;
+                }
+                .btn:hover {
+                    transition: 0.6s;
+                    box-shadow: 0 4px 20px 0 rgba(37, 16, 228, 0.14), 0 7px 10px -5px rgba(27, 38, 187, 0.851);
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    background-image: url(../img/desenfocado.png);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: soft-light;
+    background-color: rgba(20, 20, 20, 0.2);
+    .modal-content {
+        margin-top: 200px;
+        box-shadow: none !important;
+        border-radius: 20px !important;
+    }
+}
+
+.logo-login {
+    text-align: center;
+    margin-top: 60px;
+    img {
+        width: 150px;
+        height: auto;
+    }
+}
+.form-login {
+    form {
+        padding: 30px 30px 0px 30px;
+        width: 100%;
+        .form-field {
+            input {
+                width: 100%;
+                padding: 16px;
+                margin: 4px;
+                border-radius: 20px;
+                background: #E6E6E6;
+                border: none;
+                color: #352ECD;
+                font-family: 'Montserrat';
+                font-weight: 600;
+                font-size: 13px;
+            }
+            input::placeholder {
+                font-size: 13px;
+                font-family: 'Montserrat';
+                color: rgb(193, 187, 187);
+            }
+            input:focus {
+                outline: none;
+            }
+        }
+        .forget {
+            display: flex;
+            justify-content: flex-end;
+            padding: 8px;
+            a {
+                text-decoration: none;
+                font-family: 'Montserrat';
+                color: #352ECD;
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+    }
+}     
+.socials {
+    display: flex;
+    justify-content: center;
+    a {
+        padding: 0;
+        i {
+            font-size: 40px;
+            color: #fff;
+            background: #352ECD;
+            border-radius: 100%;
+            margin: 15px 20px 60px 20px;
+            box-shadow: 0 4px 20px 0 rgba(37, 16, 228, 0.14), 0 7px 10px -5px rgba(27, 38, 187, 0.851) !important;
+        }
+        i.fa-facebook-f {
+            padding: 20px 28px;
+        }
+        i.fa-google {
+            padding: 20px 22px;
+        }
+        i.fa-linkedin-in {
+            padding: 20px 24px;
+        }
+    }
+}  
+
+/* responsive */ 
+
+@media screen and (max-width: 1280px) {
+    .container-banner {
+        margin-top: 0px !important;
+        flex-direction: column-reverse !important;
+        .info-banner { 
+            margin-top: 10px !important;
+            text-align: center;
+            h2 {
+                font-size: 35px !important;
+            }
+            .register {
+                margin-top: 50px !important;
+                .btn {
+                    margin-left: 0px !important
+                }
+            }
+        }
+    }
+    .img-banner {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-exlg {
+        flex-wrap: wrap;
+        padding: 0px;
+        .login-session {
+            font-size: 14px;
+        }
+    }
+    .navbar-toggler {
+        margin-top : 12px;
+    }
+    .container-banner {
+        .info-banner { 
+            margin-top: 25px !important;
+            h2 {
+                font-size: 25px !important;
+            }
+            .register {
+                margin-top: 50px !important;
+                .btn {
+                    margin-left: 0px !important;
+                    padding: 15px 20px !important;
+                    font-size: 18px !important;
+                }
+            }
+        }
+    }
+    .img-banner {
+        margin-top: 70px;
+        text-align: center;
+        img {
+            width: 100% !important;
+        }
+    }
+    .modal-content {
+        margin-top: 70px !important;
+        form {
+            padding: 10px 10px 0px;
+        }
+    }
+    .socials {
+        a {
+            i {
+                font-size: 20px;
+            }
+            i.fa-facebook-f {
+                padding: 20px 25px;
+            }
+            i.fa-google {
+                padding: 20px 22px;
+            }
+            i.fa-linkedin-in {
+                padding: 20px 24px;
+            }
+        }
+    }
+}

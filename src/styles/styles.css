@@ -1,0 +1,320 @@
+.logo-exitum {
+  width: 120px;
+}
+
+.container-exlg {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1600px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.container-ex {
+  width: 100%;
+  max-width: 1400px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.login-session {
+  color: #352ECD !important;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.navbar.navbar-dark .navbar-toggler-icon {
+  background-image: url(../img/menu.svg) !important;
+}
+
+/* banner styles */
+.banner {
+  background: #FFF;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner .container-banner {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .container-banner .info-banner {
+  margin-top: 100px;
+}
+
+.banner .container-banner .info-banner h2 {
+  font-family: 'Montserrat';
+  color: #222222;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.banner .container-banner .info-banner .register {
+  margin-top: 100px;
+}
+
+.banner .container-banner .info-banner .register .btn {
+  margin-left: 60px;
+  background: #352ECD !important;
+  padding: 20px 40px;
+  margin-top: 20px;
+  font-family: 'Montserrat';
+  border-radius: 40px;
+  text-align: center;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 21px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-box-shadow: 0 4px 20px 0 rgba(37, 16, 228, 0.14), 0 7px 10px -5px rgba(72, 72, 80, 0.851);
+          box-shadow: 0 4px 20px 0 rgba(37, 16, 228, 0.14), 0 7px 10px -5px rgba(72, 72, 80, 0.851);
+  transition: 0.6s;
+}
+
+.banner .container-banner .info-banner .register .btn:hover {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-box-shadow: 0 4px 20px 0 rgba(37, 16, 228, 0.14), 0 7px 10px -5px rgba(27, 38, 187, 0.851);
+          box-shadow: 0 4px 20px 0 rgba(37, 16, 228, 0.14), 0 7px 10px -5px rgba(27, 38, 187, 0.851);
+}
+
+.modal {
+  background-image: url(../img/desenfocado.png);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: soft-light;
+  background-color: rgba(20, 20, 20, 0.2);
+}
+
+.modal .modal-content {
+  margin-top: 200px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border-radius: 20px !important;
+}
+
+.logo-login {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.logo-login img {
+  width: 150px;
+  height: auto;
+}
+
+.form-login form {
+  padding: 30px 30px 0px 30px;
+  width: 100%;
+}
+
+.form-login form .form-field input {
+  width: 100%;
+  padding: 16px;
+  margin: 4px;
+  border-radius: 20px;
+  background: #E6E6E6;
+  border: none;
+  color: #352ECD;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.form-login form .form-field input::-webkit-input-placeholder {
+  font-size: 13px;
+  font-family: 'Montserrat';
+  color: #c1bbbb;
+}
+
+.form-login form .form-field input:-ms-input-placeholder {
+  font-size: 13px;
+  font-family: 'Montserrat';
+  color: #c1bbbb;
+}
+
+.form-login form .form-field input::-ms-input-placeholder {
+  font-size: 13px;
+  font-family: 'Montserrat';
+  color: #c1bbbb;
+}
+
+.form-login form .form-field input::placeholder {
+  font-size: 13px;
+  font-family: 'Montserrat';
+  color: #c1bbbb;
+}
+
+.form-login form .form-field input:focus {
+  outline: none;
+}
+
+.form-login form .forget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 8px;
+}
+
+.form-login form .forget a {
+  text-decoration: none;
+  font-family: 'Montserrat';
+  color: #352ECD;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.socials a {
+  padding: 0;
+}
+
+.socials a i {
+  font-size: 40px;
+  color: #fff;
+  background: #352ECD;
+  border-radius: 100%;
+  margin: 15px 20px 60px 20px;
+  -webkit-box-shadow: 0 4px 20px 0 rgba(37, 16, 228, 0.14), 0 7px 10px -5px rgba(27, 38, 187, 0.851) !important;
+          box-shadow: 0 4px 20px 0 rgba(37, 16, 228, 0.14), 0 7px 10px -5px rgba(27, 38, 187, 0.851) !important;
+}
+
+.socials a i.fa-facebook-f {
+  padding: 20px 28px;
+}
+
+.socials a i.fa-google {
+  padding: 20px 22px;
+}
+
+.socials a i.fa-linkedin-in {
+  padding: 20px 24px;
+}
+
+/* responsive */
+@media screen and (max-width: 1280px) {
+  .container-banner {
+    margin-top: 0px !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  .container-banner .info-banner {
+    margin-top: 10px !important;
+    text-align: center;
+  }
+  .container-banner .info-banner h2 {
+    font-size: 35px !important;
+  }
+  .container-banner .info-banner .register {
+    margin-top: 50px !important;
+  }
+  .container-banner .info-banner .register .btn {
+    margin-left: 0px !important;
+  }
+  .img-banner {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-exlg {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0px;
+  }
+  .container-exlg .login-session {
+    font-size: 14px;
+  }
+  .navbar-toggler {
+    margin-top: 12px;
+  }
+  .container-banner .info-banner {
+    margin-top: 25px !important;
+  }
+  .container-banner .info-banner h2 {
+    font-size: 25px !important;
+  }
+  .container-banner .info-banner .register {
+    margin-top: 50px !important;
+  }
+  .container-banner .info-banner .register .btn {
+    margin-left: 0px !important;
+    padding: 15px 20px !important;
+    font-size: 18px !important;
+  }
+  .img-banner {
+    margin-top: 70px;
+    text-align: center;
+  }
+  .img-banner img {
+    width: 100% !important;
+  }
+  .modal-content {
+    margin-top: 70px !important;
+  }
+  .modal-content form {
+    padding: 10px 10px 0px;
+  }
+  .socials a i {
+    font-size: 20px;
+  }
+  .socials a i.fa-facebook-f {
+    padding: 20px 25px;
+  }
+  .socials a i.fa-google {
+    padding: 20px 22px;
+  }
+  .socials a i.fa-linkedin-in {
+    padding: 20px 24px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
