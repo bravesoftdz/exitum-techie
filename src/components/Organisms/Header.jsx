@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBContainer, MDBModal, MDBModalBody } from "mdbreact";
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBContainer, MDBModal, MDBModalBody, MDBBtn } from "mdbreact";
 import { Link } from 'react-router-dom';
 import logo from '../../img/logo.png'
 
+// import firebase
+import firebase from '../../initializers/firebase'
+
 class Home extends Component {
+
+    constructor(props){
+        super(props);
+        this.login = this.login.bind(this);
+    }
+
     state = {
         isOpen: false,
-        modal: false
+        modal: false,
+        socialOpen: false,
     };
 
     toggleCollapse = () => {
@@ -17,6 +27,18 @@ class Home extends Component {
         this.setState({
           modal: !this.state.modal
         });
+    }
+
+    // Logged with google
+    login() {
+        let provider = new firebase.auth.GoogleAuthProvider();
+        provider.addScope('https://www.googleapis.com/auth/photoslibrary.readonly');
+        firebase.auth().signInWithPopup(provider)
+        .then(res => {
+            let token = res.credential.accessToken;   
+        }).catch(err => {
+            console.log(err);
+        })
     }
 
     render() {
@@ -48,7 +70,7 @@ class Home extends Component {
                     </div>
                     <form action="">
                         <div className="form-field">
-                            <input type="text" placeholder="Nombre"/>
+                            <input type="text" placeholder="Correo"/>
                         </div>
                         <div className="form-field">
                             <input type="password" placeholder="Contraseña"/>
@@ -59,9 +81,9 @@ class Home extends Component {
                     </form>
                 </div>
                 <div className="socials">
-                    <Link to="/"><i className="fab fa-facebook-f"></i></Link>
-                    <Link to="/"><i className="fab fa-google"></i></Link>
-                    <Link to="/"><i className="fab fa-linkedin-in"></i></Link>
+                    <MDBBtn onClick={this.login}><i className="fab fa-facebook-f"></i></MDBBtn>
+                    <MDBBtn><i className="fab fa-google"></i></MDBBtn>
+                    <MDBBtn><i className="fab fa-linkedin-in"></i></MDBBtn>
                 </div>
               </MDBModalBody>
             </MDBModal>
